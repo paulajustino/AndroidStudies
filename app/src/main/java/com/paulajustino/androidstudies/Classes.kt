@@ -2,7 +2,7 @@ package com.paulajustino.androidstudies
 
 class Classes
 
-class Vehicle(
+class OldVehicle(
     private var velocity: Long = 0,
     private var acceleration: Long = 10,
     var model: String
@@ -21,10 +21,9 @@ class Vehicle(
 }
 
 fun main() {
-    val vehicle1: Vehicle = Vehicle(velocity = 60, model = "fiat mobi")
-    val vehicle2: Vehicle = Vehicle(velocity = 80, acceleration = 20, model = "audi A3")
+    val vehicle1: OldVehicle = OldVehicle(velocity = 60, model = "fiat mobi")
+    val vehicle2: OldVehicle = OldVehicle(velocity = 80, acceleration = 20, model = "audi A3")
 
-    vehicle1.getActualVelocity()
     println(vehicle1.model)
     println(vehicle1.getActualVelocity())
 
@@ -34,8 +33,6 @@ fun main() {
 
     println(vehicle1.getActualVelocity())
 
-
-    vehicle2.getActualVelocity()
     println(vehicle2.model)
     println(vehicle2.getActualVelocity())
 
